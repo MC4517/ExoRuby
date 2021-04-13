@@ -1,22 +1,27 @@
-puts "Quel âge tu as ?"
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 
 print ">"
 
-age = gets.chomp.to_i
-i = 0
+etages = gets.chomp.to_i
+espace = etages - 1
+carre = 1
 
+while etages > 25 || etages < 1 do
+    puts "Réessayez ! La pyramide ne doit pas excéder 25 étages !"
+    print "> "
+    etages = gets.chomp.to_i
+  end
+
+etages.times do
+    espace.times do
+        print " "
+      end
+     espace -= 1
+    carre.times do
+        print "#"
+        end
+        carre += 2
+        puts " "
     
-while age > 0 
-
     
-
-    puts "Il y a " + age.to_s + " ans tu avais : " + i.to_s + " ans"
-    age -= 1
-    i += 1 
-
-    if age == i
-        puts "Il y a " + age.to_s + " ans tu avais la moitié de ton âge !"
-        
-    end
 end
-
