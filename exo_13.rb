@@ -1,8 +1,7 @@
-puts 
-
-start = 01
-
+email = []
+start = 1
 while start < 51
-    puts "jean.dupont.#{start}@email.fr"
+email.push ("jean.dupont.#{start}@email.fr")
     start += 1
 end
+puts email
